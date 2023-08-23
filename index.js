@@ -3,6 +3,7 @@ const app = express()
 const mongooseConnect = require("./configs/mongoDB.connect");
 require("dotenv").config()
 
+app.use(express.json())
 
 app.listen(8000, (err)=> {
 
